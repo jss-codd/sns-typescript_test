@@ -11,12 +11,12 @@ $ npm install
 ## Running the app
 
 ````bash
-# development
+# launch the app
 $ npm run start
 
 ## Test
 
-```bash
+```
 
 call API --
 
