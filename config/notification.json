@@ -1,0 +1,38 @@
+{
+  "events": [
+    {
+      "event": "notes.insert",
+      "enabled": true,
+      "senders": ["console"]
+    },
+    {
+      "event": "notes.update",
+      "enabled": true,
+      "senders": ["console", "SNS1"]
+    }
+  ],
+  "senders": [
+    {
+      "id": "SNS1",
+      "type": "SNS",
+      "topicArn": "sns topic arn"
+    },
+    {
+      "id": "webhook2",
+      "type": "webhook",
+      "url": "http://goasdasdasasdogle.com",
+      "method": "GET",
+      "default": true
+    },
+    {
+      "id": "webhook1",
+      "type": "webhook",
+      "url": "http://asasasd.com",
+      "method": "GET"
+    },
+    {
+      "id": "console",
+      "type": "console"
+    }
+  ]
+}
